@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 22 15:55:07 2025
+# Process ID: 10376
+# Current directory: C:/Users/sa/Desktop/Aes_en
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7568 C:\Users\sa\Desktop\Aes_en\Aes_en.xpr
+# Log file: C:/Users/sa/Desktop/Aes_en/vivado.log
+# Journal file: C:/Users/sa/Desktop/Aes_en\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sa/Desktop/Aes_en/Aes_en.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 845.207 ; gain = 190.254
+update_compile_order -fileset sources_1
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME sim_3 [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property INCREMENTAL 0 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property INCREMENTAL 1 [get_filesets sim_1]
+set_property INCREMENTAL 0 [get_filesets sim_1]
+set_property INCREMENTAL 1 [get_filesets sim_1]
+set_property INCREMENTAL 0 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property INCREMENTAL 1 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME sim_1AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+WARNING: [Vivado 12-2535] Renaming of this fileset type is currently not supported. Hence the "NAME" property can not be changed.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 22 16:01:50 2025...

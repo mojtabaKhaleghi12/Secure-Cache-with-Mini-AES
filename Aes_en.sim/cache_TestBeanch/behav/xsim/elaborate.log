@@ -1,0 +1,25 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav

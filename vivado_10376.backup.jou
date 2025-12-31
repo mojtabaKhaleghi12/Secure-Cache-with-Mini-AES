@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 22 15:55:07 2025
+# Process ID: 10376
+# Current directory: C:/Users/sa/Desktop/Aes_en
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7568 C:\Users\sa\Desktop\Aes_en\Aes_en.xpr
+# Log file: C:/Users/sa/Desktop/Aes_en/vivado.log
+# Journal file: C:/Users/sa/Desktop/Aes_en\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sa/Desktop/Aes_en/Aes_en.xpr
+update_compile_order -fileset sources_1
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property NAME sim_3 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property INCREMENTAL 0 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property INCREMENTAL 1 [get_filesets sim_1]
+set_property INCREMENTAL 0 [get_filesets sim_1]
+set_property INCREMENTAL 1 [get_filesets sim_1]
+set_property INCREMENTAL 0 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property INCREMENTAL 1 [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]
+set_property NAME sim_1AES_EncoderTestBeanch [get_filesets sim_1]
+set_property NAME AES_EncoderTestBeanch [get_filesets sim_1]

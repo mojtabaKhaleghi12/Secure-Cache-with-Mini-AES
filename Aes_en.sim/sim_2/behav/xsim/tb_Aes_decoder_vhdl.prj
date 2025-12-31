@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Aes_en.srcs/sources_1/new/addroundkey.vhd" \
+"../../../../Aes_en.srcs/sources_1/new/shiftrows.vhd" \
+"../../../../Aes_en.srcs/sources_1/new/aes_sbox_pkg.vhd" \
+"../../../../Aes_en.srcs/sources_1/new/inv_subbytes.vhd" \
+"../../../../Aes_en.srcs/sources_1/new/inv_mixcolumns.vhd" \
+"../../../../Aes_en.srcs/sources_1/new/Aes_decoder.vhd" \
+"../../../../Aes_en.srcs/sim_2/new/tb_Aes_decoder.vhd" \
+
+# Do not sort compile order
+nosort

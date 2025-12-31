@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 30 12:17:53 2025
+# Process ID: 10236
+# Current directory: F:/AZ_vivado/CA_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2396 F:\AZ_vivado\CA_project\Aes_en.xpr
+# Log file: F:/AZ_vivado/CA_project/vivado.log
+# Journal file: F:/AZ_vivado/CA_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/AZ_vivado/CA_project/Aes_en.xpr
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_6 -jobs 4
+wait_on_run impl_6
+open_run impl_6
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_power -name {power_1}
+report_utilization -name utilization_1

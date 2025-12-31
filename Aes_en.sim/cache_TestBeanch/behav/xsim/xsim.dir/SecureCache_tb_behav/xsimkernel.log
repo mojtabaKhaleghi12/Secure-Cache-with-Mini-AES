@@ -1,0 +1,7 @@
+Running: xsim.dir/SecureCache_tb_behav/xsimk.exe -simmode gui -wdb SecureCache_tb_behav.wdb -simrunnum 0 -socket 49949
+Design successfully loaded
+Design Loading Memory Usage: 6568 KB (Peak: 6568 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 7156 KB (Peak: 7156 KB)
+Simulation CPU Usage: 109 ms

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 22 15:42:01 2025
+# Process ID: 5604
+# Current directory: C:/Users/sa/Desktop/Aes_en
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8900 C:\Users\sa\Desktop\Aes_en\Aes_en.xpr
+# Log file: C:/Users/sa/Desktop/Aes_en/vivado.log
+# Journal file: C:/Users/sa/Desktop/Aes_en\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sa/Desktop/Aes_en/Aes_en.xpr
+update_compile_order -fileset sources_1
+create_fileset -simset cache_TestBeanch
+set_property SOURCE_SET sources_1 [get_filesets cache_TestBeanch]
+file mkdir C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/cache_TestBeanch/new
+close [ open C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/cache_TestBeanch/new/SecureCache_tb.vhd w ]
+add_files -fileset cache_TestBeanch C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/cache_TestBeanch/new/SecureCache_tb.vhd
+update_compile_order -fileset cache_TestBeanch
+update_compile_order -fileset cache_TestBeanch
+current_fileset -simset [ get_filesets cache_TestBeanch ]
+launch_simulation -simset [get_filesets cache_TestBeanch ]
+source SecureCache_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd
+file delete -force C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+current_fileset -simset [ get_filesets sim_1 ]
+set_property top tb_Aes_encoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_Aes_encoder.tcl
+close_sim
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_Aes_decoder.tcl
+close_sim
+current_fileset -simset [ get_filesets cache_TestBeanch ]

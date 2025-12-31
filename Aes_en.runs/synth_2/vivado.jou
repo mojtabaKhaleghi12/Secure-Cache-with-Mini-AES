@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 30 12:18:52 2025
+# Process ID: 10560
+# Current directory: F:/AZ_vivado/CA_project/Aes_en.runs/synth_2
+# Command line: vivado.exe -log SecureCache.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SecureCache.tcl
+# Log file: F:/AZ_vivado/CA_project/Aes_en.runs/synth_2/SecureCache.vds
+# Journal file: F:/AZ_vivado/CA_project/Aes_en.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source SecureCache.tcl -notrace

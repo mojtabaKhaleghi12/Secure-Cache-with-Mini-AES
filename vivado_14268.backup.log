@@ -1,0 +1,1434 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 22 00:54:38 2025
+# Process ID: 14268
+# Current directory: C:/Users/sa/Desktop/Aes_en
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13336 C:\Users\sa\Desktop\Aes_en\Aes_en.xpr
+# Log file: C:/Users/sa/Desktop/Aes_en/vivado.log
+# Journal file: C:/Users/sa/Desktop/Aes_en\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sa/Desktop/Aes_en/Aes_en.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Aes_en' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 813.227 ; gain = 153.832
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/addroundkey.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'addroundkey'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/shiftrows.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shiftrows'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/aes_sbox_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/inv_subbytes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'inv_subbytes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/inv_mixcolumns.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'inv_mixcolumns'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/Aes_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Aes_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/subbytes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'subbytes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/mixcolumns.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mixcolumns'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/Aes_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Aes_encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 895.887 ; gain = 24.941
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 916.270 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 916.270 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 916.270 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top tb_Aes_encoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Aes_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Aes_encoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/tb_Aes_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Aes_encoder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_encoder_behav xil_defaultlib.tb_Aes_encoder -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_encoder_behav xil_defaultlib.tb_Aes_encoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture sim of entity xil_defaultlib.tb_aes_encoder
+Built simulation snapshot tb_Aes_encoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Aes_encoder_behav -key {Behavioral:sim_1:Functional:tb_Aes_encoder} -tclbatch {tb_Aes_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_Aes_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Aes_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 946.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Aes_decoder' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj tb_Aes_decoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/addroundkey.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'addroundkey'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/shiftrows.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shiftrows'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/aes_sbox_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/inv_subbytes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'inv_subbytes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/inv_mixcolumns.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'inv_mixcolumns'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/Aes_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Aes_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_2/new/tb_Aes_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Aes_decoder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_decoder_behav xil_defaultlib.tb_Aes_decoder -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_decoder_behav xil_defaultlib.tb_Aes_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture sim of entity xil_defaultlib.tb_aes_decoder
+Built simulation snapshot tb_Aes_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Aes_decoder_behav -key {Behavioral:sim_2:Functional:tb_Aes_decoder} -tclbatch {tb_Aes_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_Aes_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Aes_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 946.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_fileset -simset [ get_filesets sim_1 ]
+set_property top SecureCache_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 946.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 946.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top tb_Aes_encoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Aes_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Aes_encoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_encoder_behav xil_defaultlib.tb_Aes_encoder -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_encoder_behav xil_defaultlib.tb_Aes_encoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Aes_encoder_behav -key {Behavioral:sim_1:Functional:tb_Aes_encoder} -tclbatch {tb_Aes_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_Aes_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Aes_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 946.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Aes_decoder' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj tb_Aes_decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_decoder_behav xil_defaultlib.tb_Aes_decoder -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Aes_decoder_behav xil_defaultlib.tb_Aes_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Aes_decoder_behav -key {Behavioral:sim_2:Functional:tb_Aes_decoder} -tclbatch {tb_Aes_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_Aes_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Aes_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1073.117 ; gain = 0.398
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_fileset -simset [ get_filesets sim_1 ]
+set_property top SecureCache_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.094 ; gain = 1.977
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.094 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.094 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1081.512 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1081.512 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.609 ; gain = 12.098
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.609 ; gain = 0.000
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1093.609 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+ERROR: [VRFC 10-2989] 'key' is not declared [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:62]
+ERROR: [VRFC 10-2989] 'key' is not declared [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:77]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:29]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+ERROR: [VRFC 10-2989] 'key' is not declared [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:62]
+ERROR: [VRFC 10-2989] 'key' is not declared [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:77]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd:29]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sources_1/new/cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1093.609 ; gain = 0.000
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.609 ; gain = 0.000
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SecureCache_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SecureCache_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sa/Desktop/Aes_en/Aes_en.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SecureCache_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+"xelab -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto dec6bd0d201245d8bf3072079d0820d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SecureCache_tb_behav xil_defaultlib.SecureCache_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.aes_sbox_pkg
+Compiling architecture rtl of entity xil_defaultlib.subbytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.shiftrows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.mixcolumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.addroundkey [addroundkey_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_encoder [aes_encoder_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_subbytes [inv_subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.inv_mixcolumns [inv_mixcolumns_default]
+Compiling architecture behavioral of entity xil_defaultlib.Aes_decoder [aes_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SecureCache [securecache_default]
+Compiling architecture tb of entity xil_defaultlib.securecache_tb
+Built simulation snapshot SecureCache_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sa/Desktop/Aes_en/Aes_en.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SecureCache_tb_behav -key {Behavioral:sim_1:Functional:SecureCache_tb} -tclbatch {SecureCache_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source SecureCache_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SecureCache_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1093.609 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 22 02:22:26 2025...

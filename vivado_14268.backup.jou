@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 22 00:54:38 2025
+# Process ID: 14268
+# Current directory: C:/Users/sa/Desktop/Aes_en
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13336 C:\Users\sa\Desktop\Aes_en\Aes_en.xpr
+# Log file: C:/Users/sa/Desktop/Aes_en/vivado.log
+# Journal file: C:/Users/sa/Desktop/Aes_en\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sa/Desktop/Aes_en/Aes_en.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+set_property top tb_Aes_encoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_Aes_encoder.tcl
+close_sim
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_Aes_decoder.tcl
+close_sim
+current_fileset -simset [ get_filesets sim_1 ]
+set_property top SecureCache_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+set_property top tb_Aes_encoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_Aes_encoder.tcl
+close_sim
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_Aes_decoder.tcl
+close_sim
+current_fileset -simset [ get_filesets sim_1 ]
+set_property top SecureCache_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+run 100 ns
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+run 100 ns
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source SecureCache_tb.tcl
+run 100 ns
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+run 100 ns
+close_sim
+launch_simulation
+source SecureCache_tb.tcl
+close_sim
