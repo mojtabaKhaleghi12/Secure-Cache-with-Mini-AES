@@ -115,5 +115,8 @@ All inverse modules are implemented and verified independently.
   
   ---
   ##  Team Memmber
-  
+ https://github.com/AminMDNZ
+ 
+ https://github.com/mojtabaKhaleghi12
+ 
   ---
